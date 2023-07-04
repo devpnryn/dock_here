@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-RUN git clone https://github.com/devpnryn/sales_dashboard.git .
+RUN git clone https://github.com/devpnryn/dock_here.git .
 
 RUN pip3 install -r requirements.txt
 

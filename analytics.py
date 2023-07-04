@@ -49,6 +49,7 @@ class Analytics:
             print(f'found model at {model_name}')
         else:
             reg.load_model('models/xg_model_v2.json')
+        # reg.load_model('models/xg_model_v3.json')
         tobe_predicted_on = future_w_features[Analytics.FEATURES]
         tobe_predicted_on['pred'] = reg.predict(tobe_predicted_on)
 
